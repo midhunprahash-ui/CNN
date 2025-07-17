@@ -243,27 +243,27 @@ def get_data_transforms():
 def main():
     """Example usage of the CNN."""
     
-    # Create model
+    # # Create model
     model = CustomCNN(input_channels=3, num_classes=10, input_size=32)
     
-    # Create trainer
-    trainer = CNNTrainer(model)
+    # # Create trainer
+    # trainer = CNNTrainer(model)
     
-    # You would load your data here
-    # For example, with CIFAR-10:
-    train_transform, val_transform = get_data_transforms()
-    train_dataset = torchvision.datasets.CIFAR10(root='./data', train=True, 
-                                                download=True, transform=train_transform)
-    val_dataset = torchvision.datasets.CIFAR10(root='./data', train=False, 
-                                              transform=val_transform)
-    train_loader = DataLoader(train_dataset, batch_size=128, shuffle=True)
-    val_loader = DataLoader(val_dataset, batch_size=128, shuffle=False)
+    # # You would load your data here
+    # # For example, with CIFAR-10:
+    # train_transform, val_transform = get_data_transforms()
+    # train_dataset = torchvision.datasets.CIFAR10(root='./data', train=True, 
+    #                                             download=True, transform=train_transform)
+    # val_dataset = torchvision.datasets.CIFAR10(root='./data', train=False, 
+    #                                           transform=val_transform)
+    # train_loader = DataLoader(train_dataset, batch_size=128, shuffle=True)
+    # val_loader = DataLoader(val_dataset, batch_size=128, shuffle=False)
     
-    # Train the model
-    trainer.train(train_loader, val_loader, num_epochs=100)
+    # # Train the model
+    # trainer.train(train_loader, val_loader, num_epochs=100)
     
-    # Save the model
-    torch.save(model.state_dict(), 'custom_cnn.pth')
+    # # Save the model
+    # torch.save(model.state_dict(), 'custom_cnn.pth')
     
     print("CNN architecture created successfully!")
     print(f"Model parameters: {sum(p.numel() for p in model.parameters() if p.requires_grad):,}")
