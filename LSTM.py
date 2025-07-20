@@ -25,7 +25,7 @@ TOKENIZER_SAVE_PATH = 'tokenizer.pkl'
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")
-
+# Sample texts
 sample_texts = [
     "You are always so careless, it's frustrating!",
     "I appreciate your effort and understand your challenges.",
