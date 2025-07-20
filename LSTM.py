@@ -170,7 +170,7 @@ for epoch in range(EPOCHS):
 print("\n--- Plotting Learning Curve ---")
 
 epochs_range = range(1, EPOCHS + 1)
-
+# Visualization
 plt.figure(figsize=(12, 5))
 
 plt.subplot(1, 2, 1)
