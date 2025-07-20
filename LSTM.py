@@ -9,7 +9,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 import pickle
-
+# Hyoerparameters
 VOCAB_SIZE = 10000
 MAX_SEQUENCE_LENGTH = 100
 EMBEDDING_DIM = 128
@@ -19,7 +19,7 @@ DROPOUT_RATE = 0.5
 EPOCHS = 25
 BATCH_SIZE = 32
 NUM_CLASSES = 3
-
+#Saving the model
 MODEL_SAVE_PATH = 'bilstm_psychology_model.pth'
 TOKENIZER_SAVE_PATH = 'tokenizer.pkl'
 
