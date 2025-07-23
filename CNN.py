@@ -246,7 +246,7 @@ def main():
     # # Create model
     model = CustomCNN(input_channels=3, num_classes=10, input_size=32)
     
-    # # Create trainer
+     Create trainer
     # trainer = CNNTrainer(model)
     
     # # You would load your data here
